@@ -1,0 +1,20 @@
+package Collection;
+
+import java.util.ArrayList;
+
+public class DemoArrayList {
+	public static void main(String[] args) {
+		
+		ArrayList l=new ArrayList();
+		
+		l.add(10);
+		l.add("Sanjeeb");
+		l.add('Z');
+		l.add(12.34f);
+		l.add(null);
+		l.add(true);
+		
+		System.out.println(l);
+		System.out.println("Size of ArrayList is: "+l.size());
+	}
+}

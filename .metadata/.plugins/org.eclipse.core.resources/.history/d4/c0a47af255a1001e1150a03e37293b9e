@@ -1,0 +1,32 @@
+package Polymorphism;
+
+public class Test {
+	public void m1() {
+		System.out.println("Hi");
+	}
+	
+	public static void main(String[] args) {
+		Test t =new Test();
+		t.m1();//Hi
+	}
+}
+
+class B extends Test{
+	
+	@Override
+	public void m1() {
+		System.out.println("Bye");
+	}
+	
+	public static void main(String[] args) {
+		B b=new B();
+		b.m1();//Bye
+	}
+}
+
+class C extends B{
+	@Override
+	public void m1() {
+		System.out.println("Why");
+	}
+}

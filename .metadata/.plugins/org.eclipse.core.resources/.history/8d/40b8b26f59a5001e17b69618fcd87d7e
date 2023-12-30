@@ -1,0 +1,11 @@
+package Collection;
+
+import java.util.LinkedHashMap;
+
+public class DemoLinkedHashMap {
+	public static void main(String[] args) {
+		LinkedHashMap<Integer, String> lh=new LinkedHashMap<Integer, String>();
+		lh.put(101, "Sanjeeb");
+		lh.put(102, "Rajeeb");
+	}
+}

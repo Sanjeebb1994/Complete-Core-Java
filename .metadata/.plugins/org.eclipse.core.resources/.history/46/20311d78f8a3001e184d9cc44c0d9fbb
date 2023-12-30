@@ -1,0 +1,17 @@
+package Collection;
+
+public class Students implements Comparable{
+	
+	String name;
+	int rollNum;
+	public Students(String name,int rollNum) {
+		this.name=name;
+		this.rollNum=rollNum;
+	}
+	
+	@Override
+	public String toString() {
+		return "Student Name: "+name+" RollNumber: "+rollNum;
+	}
+
+}

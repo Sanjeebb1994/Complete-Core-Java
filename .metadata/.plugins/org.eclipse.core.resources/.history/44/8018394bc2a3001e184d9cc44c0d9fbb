@@ -1,0 +1,22 @@
+package Collection;
+
+import java.util.TreeSet;
+
+public class DemoTreeSet {
+	
+	public static void main(String[] args) {
+		
+		TreeSet ts=new TreeSet();
+		
+		ts.add(12);
+		ts.add(34);
+		ts.add(55);
+		ts.add(12);
+		//ts.add("Sanjeeb");
+		ts.add(5);
+		ts.add(null);
+		
+		System.out.println(ts);
+	}
+
+}

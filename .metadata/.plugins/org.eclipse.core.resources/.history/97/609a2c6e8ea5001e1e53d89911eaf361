@@ -1,0 +1,48 @@
+package Collection;
+
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.TreeMap;
+
+public class DemoTreeMap {
+	
+	public static void main(String[] args) {
+		TreeMap<Integer, String> tm=new TreeMap<Integer, String>();
+		tm.put(15, "Hello");
+		tm.put(45, "Kumar");
+		tm.put(25, "Sayali");
+		tm.put(35, "Pavan");
+		tm.put(20, "Sujeer");
+		System.out.println(tm);
+		System.out.println("Print Keys only.....");
+		Set<Integer> k=tm.keySet();
+		Iterator<Integer> it1=k.iterator();
+		while(it1.hasNext()) {
+			Integer i=it1.next();
+			System.out.println(i);
+		}
+		System.out.println("Print Values only....");
+		Collection<String> c=tm.values();
+		Iterator<String> it2=c.iterator();
+		while(it2.hasNext()) {
+			String str=it2.next();
+			System.out.println(str);
+		}
+		System.out.println("Print both Keys and Values as well.....");
+		Set<Entry<Integer, String>> e=tm.entrySet();
+		Iterator<Entry<Integer, String>> it3=e.iterator();
+		while(it3.hasNext()) {
+			Object obj=it3.next();
+			Map.Entry<Integer, String> m=(Map.Entry<Integer, String>)obj;
+			System.out.println(m.getKey());
+			System.out.println(m.getValue());
+		}
+		
+	}
+
+}
+
+
