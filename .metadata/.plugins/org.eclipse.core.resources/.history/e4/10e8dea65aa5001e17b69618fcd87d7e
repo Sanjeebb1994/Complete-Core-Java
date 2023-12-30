@@ -1,0 +1,25 @@
+package Collection;
+
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Set;
+
+public class DemoLinkedHashMap {
+	public static void main(String[] args) {
+		LinkedHashMap<Integer, String> lh=new LinkedHashMap<Integer, String>();
+		lh.put(101, "Sanjeeb");
+		lh.put(102, "Rajeeb");
+		lh.put(103, "Nitu");
+		lh.put(104, "Rinku");
+		
+		System.out.println(lh);
+		System.out.println("Get only key....");
+		Set<Integer> s=lh.keySet();
+		Iterator<Integer> it=s.iterator();
+		while(it.hasNext()) {
+			Integer i=it.next();
+			System.out.println(i);
+		}
+		
+	}
+}

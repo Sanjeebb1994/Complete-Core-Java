@@ -1,0 +1,16 @@
+package Collection;
+
+public class DemoClone implements Cloneable{
+	String name;
+	int age;
+	DemoClone(String name, int age){
+		this.name=name;
+		this.age=age;
+	}
+	
+	public Object clone() throws CloneNotSupportedException {
+		return super.clone();
+	}
+	
+	
+}

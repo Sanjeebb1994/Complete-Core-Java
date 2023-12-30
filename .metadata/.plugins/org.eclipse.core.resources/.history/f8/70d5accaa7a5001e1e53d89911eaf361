@@ -1,0 +1,13 @@
+package ExceptionHandling;
+
+public class DemoException {
+	public static void main(String[] args) {
+		try {
+			int i=55;
+			int data=i/0;
+		}catch(ArithmeticException e) {
+			System.out.println(e);
+		}
+		System.out.println("Rest code...");
+	}
+}

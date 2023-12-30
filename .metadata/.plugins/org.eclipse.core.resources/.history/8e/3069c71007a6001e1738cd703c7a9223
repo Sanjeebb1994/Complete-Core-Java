@@ -1,0 +1,21 @@
+package AccessModifier;
+
+public class DemoPrivate {
+	
+	private String name="Sanjeeb";
+	int age=32;
+	public static void main(String[] args) {
+		DemoPrivate dp=new DemoPrivate();
+		System.out.println("My Name is:: "+dp.name);
+		System.out.println("My age is:: "+dp.age);
+	}
+
+}
+
+class TestDemo extends DemoPrivate{
+	public static void main(String[] args) {
+		TestDemo td=new TestDemo();
+		//System.out.println(td.name);//Since it declare as private we can't be access outside other class
+		System.out.println("My age is:: "+td.age);
+	}
+}

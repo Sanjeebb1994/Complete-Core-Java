@@ -1,0 +1,10 @@
+package Encapsulation;
+
+public class DemoEncapsulation {
+	private int x=10;//Global non-static
+	private static int y=20;//Global-static
+	public static void main(String[] args) {
+		//private int x=10;//Local variable can't be declare as private.
+	}
+
+}

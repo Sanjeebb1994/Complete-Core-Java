@@ -1,0 +1,20 @@
+package Collection;
+
+import java.util.Vector;
+
+public class DemoVectorList {
+	public static void main(String[] args) {
+		
+		Vector v=new Vector();
+		v.add("Sanjeeb");
+		v.add(10);
+		v.add(23.768f);
+		v.add('B');
+		v.add(null);
+		v.add(true);
+		
+		System.out.println("Size of vector list is:: "+v.size());
+		System.out.println(v);
+		
+	}
+}

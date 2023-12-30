@@ -1,0 +1,17 @@
+package Collection;
+
+import java.util.TreeMap;
+
+public class DemoTreeMap {
+	
+	public static void main(String[] args) {
+		TreeMap<Integer, String> tm=new TreeMap<Integer, String>();
+		tm.put(15, "Hello");
+		tm.put(45, "Kumar");
+		tm.put(25, "Sayali");
+		tm.put(35, "Pavan");
+		tm.put(20, "Sujeer");
+		System.out.println(tm);
+	}
+
+}

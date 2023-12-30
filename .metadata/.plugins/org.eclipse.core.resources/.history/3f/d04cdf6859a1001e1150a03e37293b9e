@@ -1,0 +1,61 @@
+package Polymorphism;
+
+public class Test {
+	
+	Test t=new Test();//Globally
+	
+	public void m1() {
+		System.out.println("Hi");
+	}
+	
+	public static void main(String[] args) {
+		Test t =new Test();// Normal Object creation
+		t.m1();//Hi
+		
+		
+		Test t1=new B();//Locally UpCasting
+		t1.m1();//Bye
+		
+		Test t2= new C();//UpCasting
+		t2.m1();//Why
+	}
+}
+
+class B extends Test{
+	
+	@Override
+	public void m1() {
+		System.out.println("Bye");
+	}
+	
+	public static void main(String[] args) {
+		B b=new B();//Normal Object creation
+		b.m1();//Bye
+		
+		B b1=new C();//UpCasting
+		b1.m1();//Why
+		
+		C c2=(C)b1;//Down Casting
+		c2.m1();//Why
+	}
+}
+
+class C extends B{
+	@Override
+	public void m1() {
+		System.out.println("Why");
+	}
+	
+	public static void main(String[] args) {
+		C c=new C();
+		c.m1();//Why
+		
+		B b2=new C();
+		b2.m1();//Why
+		
+		C c1=(C)b2;
+		c1.m1();//Why
+		
+		
+	}
+}

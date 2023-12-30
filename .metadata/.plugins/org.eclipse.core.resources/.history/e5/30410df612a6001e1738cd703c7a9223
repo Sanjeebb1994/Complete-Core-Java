@@ -1,0 +1,47 @@
+package Encapsulation;
+
+public class DemoEncapsulation {
+	private int x=10;//Global non-static
+	private static int y=20;//Global-static
+//	{
+//		private int z=10;
+//	}
+	public static void main(String[] args) {
+		//private int x=10;//Local variable can't be declare as private.
+		DemoEncapsulation de=new DemoEncapsulation();
+		System.out.println(de.x);
+		System.out.println(DemoEncapsulation.y);
+		System.out.println(de.y);
+		System.out.println(y);
+	}
+
+}
+
+class PersionDetails{
+	private String name="Sanjeeb";
+	private long accountNumber=20212165499L;
+	
+	public String getName() {
+		return name;
+	}
+	
+	public long getAccountNumber() {
+		return accountNumber;
+	}
+	
+   
+}
+class AccessPersion extends PersionDetails{
+	public static void main(String[] args) {
+		AccessPersion ap=new AccessPersion();
+		String name=ap.getName();
+		//Access name
+		System.out.println(name);
+		
+		//Access accountNumber
+		long accountNumber =ap.getAccountNumber();
+		System.out.println(accountNumber);
+		
+	}
+}
+

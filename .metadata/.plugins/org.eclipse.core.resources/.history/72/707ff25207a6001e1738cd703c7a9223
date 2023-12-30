@@ -1,0 +1,11 @@
+package CheckAccessModifier;
+
+import AccessModifier.DemoPrivate;
+
+public class SampleDefault  extends DemoPrivate{
+     public static void main(String[] args) {
+		SampleDefault sd=new SampleDefault();
+		//sd.name
+		//sd.age
+	}
+}

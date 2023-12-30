@@ -1,0 +1,11 @@
+package AccessModifier;
+
+public class DemoPrivate {
+	
+	private String name="Sanjeeb";
+	public static void main(String[] args) {
+		DemoPrivate dp=new DemoPrivate();
+		System.out.println("My Name is:: "+dp.name);
+	}
+
+}

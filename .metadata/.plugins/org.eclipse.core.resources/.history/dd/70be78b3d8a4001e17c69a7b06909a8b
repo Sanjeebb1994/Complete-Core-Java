@@ -1,0 +1,19 @@
+package Collection;
+
+import java.util.PriorityQueue;
+
+public class DemoQueue {
+	
+	public static void main(String[] args) {
+		PriorityQueue pq=new PriorityQueue();
+		
+		pq.add(12);
+		pq.add("Sanjeeb");
+		pq.add(3);
+		pq.add(12);
+		pq.add(45);
+		pq.add(56);
+		pq.add(null);
+		System.out.println(pq);
+	}
+}
